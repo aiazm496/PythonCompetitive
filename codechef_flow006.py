@@ -1,12 +1,8 @@
 t = int(input())
 
 while(t):
-    x = int(input())
-    sum = 0
-    while(x>0):
-        last_digit = x%10
-        sum+=last_digit
-        x = int(x/10)
-    print(sum)
+    x = input()
+    z = [int(i) for i in x]
+    print(sum(z))
     t-=1
 
