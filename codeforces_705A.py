@@ -5,4 +5,4 @@ if n ==1:
 elif n==2:
     print("I hate that I love it")
 else:
-    print("I hate that I love that I hate it")
+    print('I hate that I love that I hate it')
