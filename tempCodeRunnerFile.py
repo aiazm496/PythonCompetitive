@@ -1,19 +1,10 @@
-inp_lis = [int(i) for i in input().split()]
+t  = int(input())
+s = input().lower()
 
-n = inp_lis[0]
-t = inp_lis[1]
+distinct_s = set(s)
 
-q = input()
-nq = []
-
-
-while(t):
-    for i in range(len(q)-1):
-        if(q[i]=='B' and q[i+1] == 'G'):
-            nq[i] = ('G')
-            nq[i+1] = ('B')
-        else:
-            nq[i] = (q[i])
-            nq[i+1] = (q[i+1])
-    t-=1
-
+print(distinct_s)
+if(len(distinct_s)==26):
+    print("YES")
+else:
+    print("NO")
